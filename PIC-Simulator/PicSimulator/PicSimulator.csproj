@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <StartupObject>PicSimulator.SimulatorMain</StartupObject>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Simulator\**" />
+    <EmbeddedResource Remove="Simulator\**" />
+    <None Remove="Simulator\**" />
+    <Page Remove="Simulator\**" />
+  </ItemGroup>
+
+</Project>
